@@ -1,20 +1,20 @@
 /*
- *  This file is part of Namib Settings Manager.
+ *  This file is part of Arco Settings Manager.
  *
  *  Ramon Buldó <ramon@manjaro.org>
  *
- *  Namib Settings Manager is free software: you can redistribute it and/or modify
+ *  Arco Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
  *  (at your option) any later version.
  *
- *  Namib Settings Manager is distributed in the hope that it will be useful,
+ *  Arco Settings Manager is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Namib Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
+ *  along with Arco Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
  */
 #include <limits>
 #include "ActionDialog.h"
@@ -43,7 +43,7 @@ MhwdCommon::getTitle()
 QString
 MhwdCommon::getDescription()
 {
-    return QString( tr ( "Namib Hardware Detection graphical user interface" ) );
+    return QString( tr ( "Arco Hardware Detection graphical user interface" ) );
 }
 
 
@@ -161,8 +161,8 @@ MhwdCommon::installConfiguration( QString configuration )
 
     QVariantMap args;
     args["arguments"] = QStringList() << "-i" << "pci" << configuration;
-    KAuth::Action installAction( QLatin1String( "org.namib.msm.mhwd.install" ) );
-    installAction.setHelperId( QLatin1String( "org.namib.msm.mhwd" ) );
+    KAuth::Action installAction( QLatin1String( "org.arco.msm.mhwd.install" ) );
+    installAction.setHelperId( QLatin1String( "org.arco.msm.mhwd" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 
@@ -184,8 +184,8 @@ MhwdCommon::installFreeConfiguration( )
 
     QVariantMap args;
     args["arguments"] = QStringList() << "-a" << "pci" << "free" << "0300";
-    KAuth::Action installAction( QLatin1String( "org.namib.msm.mhwd.install" ) );
-    installAction.setHelperId( QLatin1String( "org.namib.msm.mhwd" ) );
+    KAuth::Action installAction( QLatin1String( "org.arco.msm.mhwd.install" ) );
+    installAction.setHelperId( QLatin1String( "org.arco.msm.mhwd" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 
@@ -207,8 +207,8 @@ MhwdCommon::installNonFreeConfiguration( )
 
     QVariantMap args;
     args["arguments"] = QStringList() << "-a" << "pci" << "nonfree" << "0300";
-    KAuth::Action installAction( QLatin1String( "org.namib.msm.mhwd.install" ) );
-    installAction.setHelperId( QLatin1String( "org.namib.msm.mhwd" ) );
+    KAuth::Action installAction( QLatin1String( "org.arco.msm.mhwd.install" ) );
+    installAction.setHelperId( QLatin1String( "org.arco.msm.mhwd" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 
@@ -230,8 +230,8 @@ MhwdCommon::reinstallConfiguration( QString configuration )
 
     QVariantMap args;
     args["arguments"] = QStringList() << "-f" << "-i" << "pci" << configuration;
-    KAuth::Action installAction( QLatin1String( "org.namib.msm.mhwd.install" ) );
-    installAction.setHelperId( QLatin1String( "org.namib.msm.mhwd" ) );
+    KAuth::Action installAction( QLatin1String( "org.arco.msm.mhwd.install" ) );
+    installAction.setHelperId( QLatin1String( "org.arco.msm.mhwd" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 
@@ -253,8 +253,8 @@ MhwdCommon::removeConfiguration( QString configuration )
 
     QVariantMap args;
     args["arguments"] = QStringList() << "-r" << "pci" << configuration;
-    KAuth::Action installAction( QLatin1String( "org.namib.msm.mhwd.remove" ) );
-    installAction.setHelperId( QLatin1String( "org.namib.msm.mhwd" ) );
+    KAuth::Action installAction( QLatin1String( "org.arco.msm.mhwd.remove" ) );
+    installAction.setHelperId( QLatin1String( "org.arco.msm.mhwd" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 

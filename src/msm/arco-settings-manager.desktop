@@ -1,11 +1,11 @@
 [Desktop Entry]
-Name=Namib Settings Manager
+Name=Arco Settings Manager
 
-Comment=Graphical Settings Manager for Namib
+Comment=Graphical Settings Manager for Arco
 
-Exec=namib-settings-manager
+Exec=arco-settings-manager
 Icon=preferences-desktop
 Terminal=false
 Type=Application
 Categories=Settings;DesktopSettings;X-LXDE-Settings;X-KDE-Settings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
-Name[en_CA]=namib-settings-manager.desktop
+Name[en_CA]=arco-settings-manager.desktop

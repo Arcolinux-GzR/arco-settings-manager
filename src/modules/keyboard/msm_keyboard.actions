@@ -2,9 +2,9 @@
 Name=namib-settings-manager
 Name[x-test]=xxnamib-settings-managerxx
 Icon=kauth-example
-URL=https://github.com/namib/namib-settings-manager
+URL=https://github.com/Arcolinux-GzR/arco-settings-manager
 
-[org.namib.msm.keyboard.save]
+[org.arco.msm.keyboard.save]
 Name=Save Keyboard Settings
 Description=Save Keyboard Settings
 Policy=auth_admin

@@ -1,10 +1,10 @@
 [Domain]
-Name=namib-settings-manager
-Name[x-test]=xxnamib-settings-managerxx
+Name=arco-settings-manager
+Name[x-test]=xxarco-settings-managerxx
 Icon=kauth-example
-URL=https://github.com/namib/namib-settings-manager
+URL=https://github.com/Arcolinux-GzR/arco-settings-manager
 
-[org.namib.msm.locale.save]
+[org.arco.msm.locale.save]
 Name=Save Locale Settings
 Description=Save Locale Settings
 Policy=auth_admin

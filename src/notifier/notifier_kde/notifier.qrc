@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>icons/language.png</file>
-        <file>icons/tux-namib.png</file>
+        <file>icons/tux-arco.png</file>
     </qresource>
 </RCC>

@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[namib-settings-manager.msmts]
+[arco-settings-manager.msmts]
 file_filter = src/libmsm/translations/msm_<lang>.ts
 source_lang = en
 type = QT

@@ -1,16 +1,16 @@
 [Domain]
-Name=namib-settings-manager
-Name[x-test]=xxnamib-settings-managerxx
+Name=arco-settings-manager
+Name[x-test]=xxarco-settings-managerxx
 Icon=kauth-example
-URL=https://github.com/namib/namib-settings-manager
+URL=https://github.com/Arcolinux-GzR/arco-settings-manager
 
-[org.namib.msm.mhwd.install]
+[org.arco.msm.mhwd.install]
 Name=Install MHWD Configuration
 Description=Install MHWD Configuration
 Policy=auth_admin
 Persistence=session
 
-[org.namib.msm.mhwd.remove]
+[org.arco.msm.mhwd.remove]
 Name=Remove MHWD Configuration
 Description=Remove MHWD Configuration
 Policy=auth_admin

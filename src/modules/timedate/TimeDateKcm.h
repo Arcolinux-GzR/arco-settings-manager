@@ -1,5 +1,5 @@
 /*
- *  Namib Settings Manager
+ *  Arco Settings Manager
  *  Ramon Buldó <ramon@manjaro.org>
  *
  *  Copyright (C) 2007 Free Software Foundation, Inc.

@@ -1,20 +1,20 @@
 /*
- *  This file is part of Namib Settings Manager.
+ *  This file is part of Arco Settings Manager.
  *
  *  Ramon Buldó <ramon@manjaro.org>
  *
- *  Namib Settings Manager is free software: you can redistribute it and/or modify
+ *  Arco Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
  *  (at your option) any later version.
  *
- *  Namib Settings Manager is distributed in the hope that it will be useful,
+ *  Arco Settings Manager is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Namib Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
+ *  along with Arco Settings Manager.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #include "MsmApplication.h"
@@ -29,16 +29,16 @@ MsmApplication::MsmApplication( int& argc, char* argv[] )
       m_mainwindow( 0 )
 {
     setAttribute(Qt::AA_EnableHighDpiScaling, true);
-    setOrganizationName( "Namib" );
-    setOrganizationDomain( "Namib" );
-    setApplicationName( "Namib Settings Manager" );
+    setOrganizationName( "Arco" );
+    setOrganizationDomain( "Arco" );
+    setApplicationName( "Arco Settings Manager" );
     setApplicationVersion( "0.5.3" );
 }
 
 
 MsmApplication::~MsmApplication()
 {
-    qDebug() << "Shutting down Namib Settings Manager...";
+    qDebug() << "Shutting down Arco Settings Manager...";
 }
 
 

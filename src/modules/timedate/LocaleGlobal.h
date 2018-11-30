@@ -2,7 +2,7 @@
  *
  *   Copyright 2014, Teo Mrnjavac <teo@kde.org>
  *
- *   Originally from the Namib Installation Framework
+ *   Originally from the Arco Installation Framework
  *   by Roland Singer <roland@manjaro.org>
  *   Copyright (C) 2007 Free Software Foundation, Inc.
  *

@@ -1,18 +1,18 @@
 # This is for local testing and only works if used in the root of the cloned repo (with makepkg)
 # Maintainer : Ramon Buldo <ramon@manjaro.org>
-pkgbase=namib-settings-manager
-pkgname=('namib-settings-manager' 'namib-settings-manager-kcm' 
-         'namib-settings-manager-notifier' 'namib-settings-manager-knotifier')
+pkgbase=arco-settings-manager
+pkgname=('arco-settings-manager' 'arco-settings-manager-kcm' 
+         'arco-settings-manager-notifier' 'arco-settings-manager-knotifier')
 pkgver=0.5.5
 pkgrel=1
-pkgdesc="Namib settings manager module"
+pkgdesc="Arco settings manager module"
 arch=('i686' 'x86_64')
-url="https://github.com/namiblinux/namib-settings-manager"
+url="https://github.com/Arcolinux-GzR/arco-settings-manager"
 license=("GPL")
 depends=('icu>=61.1' 'qt5-base>=5.9.1' 'hwinfo' 'kitemmodels' 'kauth' 
          'kcoreaddons' 'ckbcomp' 'xdg-utils')
-optdepends=('namib-settings-manager-notifier: qt-based'
-            'namib-settings-manager-knotifier: knotifications-based')
+optdepends=('arco-settings-manager-notifier: qt-based'
+            'arco-settings-manager-knotifier: knotifications-based')
 makedepends=('extra-cmake-modules' 'kdoctools' 'qt5-tools' 'knotifications' 
              'kconfigwidgets' 'kcmutils')
 conflicts=('kcm-nsm')
@@ -32,8 +32,8 @@ build() {
   CXXFLAGS+="-std=gnu++98"
 }
 
-package_namib-settings-manager() {
-  cd "${srcdir}/namib-settings-manager/build"
+package_arco-settings-manager() {
+  cd "${srcdir}/arco-settings-manager/build"
   make DESTDIR=${pkgdir} install 
   rm -rf $pkgdir/usr/bin/msm_notifier
   rm -rf $pkgdir/usr/bin/msm_kde_notifier
@@ -44,11 +44,11 @@ package_namib-settings-manager() {
   rm -rf $pkgdir/etc/xdg
 }
 
-package_namib-settings-manager-kcm() {
-  pkgdesc="Namib Linux System Settings Tool (KCM for Plasma 5)"
-  depends=('namib-settings-manager' 'kcmutils' 'kconfigwidgets')
+package_arco-settings-manager-kcm() {
+  pkgdesc="Arco Linux System Settings Tool (KCM for Plasma 5)"
+  depends=('arco-settings-manager' 'kcmutils' 'kconfigwidgets')
   replaces=('kcm-nsm')
-  cd "${srcdir}/namib-settings-manager/build"
+  cd "${srcdir}/arco-settings-manager/build"
   make DESTDIR=${pkgdir} install
   rm -rf $pkgdir/etc  
   rm -rf $pkgdir/usr/bin
@@ -56,36 +56,36 @@ package_namib-settings-manager-kcm() {
   rm -rf $pkgdir/usr/share/{applications,dbus-1,icons,polkit-1}
 }
 
-package_namib-settings-manager-notifier() {
-  pkgdesc="Namib Linux System Settings Tool (Notifier)"
-  depends=('namib-settings-manager')
-  provides=('namib-settings-manager-kde-notifier')
-  conflicts=('namib-settings-manager-kde-notifier')
-  cd "${srcdir}/namib-settings-manager/build"
+package_arco-settings-manager-notifier() {
+  pkgdesc="Arco Linux System Settings Tool (Notifier)"
+  depends=('arco-settings-manager')
+  provides=('arco-settings-manager-kde-notifier')
+  conflicts=('arco-settings-manager-kde-notifier')
+  cd "${srcdir}/arco-settings-manager/build"
   make DESTDIR=${pkgdir} install
   rm -rf $pkgdir/etc/dbus-1
   rm -rf $pkgdir/etc/xdg/autostart/msm_kde_notifier.desktop
   rm -rf $pkgdir/usr/lib/
   rm -rf $pkgdir/usr/share/{kservices5,dbus-1,icons,polkit-1}
-  rm -rf $pkgdir/usr/share/applications/namib*
+  rm -rf $pkgdir/usr/share/applications/arco*
   rm -rf $pkgdir/usr/share/applications/msm_kde_notifier_settings.desktop
-  rm -rf $pkgdir/usr/bin/namib*
+  rm -rf $pkgdir/usr/bin/arco*
   rm -rf $pkgdir/usr/bin/msm_kde_notifier
 }
 
-package_namib-settings-manager-knotifier() {
-  pkgdesc="Namib Linux System Settings Tool (Notifier for Plasma 5)"
-  depends=('namib-settings-manager' 'knotifications')
-  conflicts=('namib-settings-manager-notifier')
-  replaces=('namib-settings-manager-kde-notifier')
-  cd "${srcdir}/namib-settings-manager/build"
+package_arco-settings-manager-knotifier() {
+  pkgdesc="Arco Linux System Settings Tool (Notifier for Plasma 5)"
+  depends=('arco-settings-manager' 'knotifications')
+  conflicts=('arco-settings-manager-notifier')
+  replaces=('arco-settings-manager-kde-notifier')
+  cd "${srcdir}/arco-settings-manager/build"
   make DESTDIR=${pkgdir} install
   rm -rf $pkgdir/etc/dbus-1
   rm -rf $pkgdir/etc/xdg/autostart/msm_notifier.desktop
   rm -rf $pkgdir/usr/lib/
   rm -rf $pkgdir/usr/share/{kservices5,dbus-1,icons,polkit-1}
-  rm -rf $pkgdir/usr/share/applications/namib*
+  rm -rf $pkgdir/usr/share/applications/arco*
   rm -rf $pkgdir/usr/share/applications/msm_notifier_settings.desktop
-  rm -rf $pkgdir/usr/bin/namib*
+  rm -rf $pkgdir/usr/bin/arco*
   rm -rf $pkgdir/usr/bin/msm_notifier
 } 

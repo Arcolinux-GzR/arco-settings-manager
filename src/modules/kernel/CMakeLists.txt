@@ -77,5 +77,5 @@ target_link_libraries(msm_kernel_authhelper
     KF5::Auth)
 
 install(TARGETS msm_kernel_authhelper DESTINATION ${KAUTH_HELPER_INSTALL_DIR})
-kauth_install_helper_files(msm_kernel_authhelper org.namib.msm.kernel root)
-kauth_install_actions(org.namib.msm.kernel msm_kernel.actions)
+kauth_install_helper_files(msm_kernel_authhelper org.arco.msm.kernel root)
+kauth_install_actions(org.arco.msm.kernel msm_kernel.actions)

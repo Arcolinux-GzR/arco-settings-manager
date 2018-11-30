@@ -1,5 +1,5 @@
 /*
- *  mhwd - Namib Hardware Detection
+ *  mhwd - Arco Hardware Detection
  *  Roland Singer <roland@manjaro.org>
  *
  *  This program is free software: you can redistribute it and/or modify

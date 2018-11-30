@@ -1,18 +1,18 @@
 [Desktop Entry]
-Name=Namib Notifier KDE Settings
-Name[da]=Namib-notifikator KDE-indstillinger
-Name[fr]=Paramètres du Notifieur KDE Namib
-Name[hu]=A Namib Notifier KDE beállítása
-Name[pl]=Ustawienia powiadomień Namib dla KDE
-Name[sk]=Nastavenia oznámení KDE systému Namib
+Name=Arco Notifier KDE Settings
+Name[da]=Arco-notifikator KDE-indstillinger
+Name[fr]=Paramètres du Notifieur KDE Arco
+Name[hu]=A Arco Notifier KDE beállítása
+Name[pl]=Ustawienia powiadomień Arco dla KDE
+Name[sk]=Nastavenia oznámení KDE systému Arco
 
-Comment=Graphical Settings for Namib Notifier KDE
-Comment[da]=Grafiske indstillinger til Namib-notifikator KDE
-Comment[de]=Grafische Einstellungsverwaltung für Namib
-Comment[fr]=Gestionnaire graphique de paramètres pour Notifieur Namib
-Comment[hu]=Grafikus beállításkezelő a Namib KDE Értesítőhöz
-Comment[pl]=Graficzne ustawienia powiadomień Namib dla środowiska KDE
-Comment[sk]=Grafické nastavenia oznámení prostredia KDE pre systém Namib
+Comment=Graphical Settings for Arco Notifier KDE
+Comment[da]=Grafiske indstillinger til Arco-notifikator KDE
+Comment[de]=Grafische Einstellungsverwaltung für Arco
+Comment[fr]=Gestionnaire graphique de paramètres pour Notifieur Arco
+Comment[hu]=Grafikus beállításkezelő a Arco KDE Értesítőhöz
+Comment[pl]=Graficzne ustawienia powiadomień Arco dla środowiska KDE
+Comment[sk]=Grafické nastavenia oznámení prostredia KDE pre systém Arco
 
 Exec=msm_kde_notifier --settings
 Icon=preferences-desktop

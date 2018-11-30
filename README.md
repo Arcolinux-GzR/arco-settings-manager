@@ -1,6 +1,6 @@
-# Namib Settings Manager
+# Arco Settings Manager
 
-The Namib Settings Manager offers you a series of settings, which are
+The Arco Settings Manager offers you a series of settings, which are
 either enabled by Namib (i.e. installation of multiple kernels) or are 
 missing from at least some of popular Desktop Environments and Window Managers.
 
@@ -9,7 +9,7 @@ Kernel, Keyboard, Time and Date and User Accounts.
 
 It also includes a daemon to notify user of new language packages or kernels.
 
-Namib Settings Manager is under active development.
+Arco Settings Manager is under active development.
 
 
 ### BUILD INSTRUCTIONS
